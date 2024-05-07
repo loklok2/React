@@ -1,19 +1,21 @@
-import logo from './logo.svg'
+// import logo from './logo.svg'
 import './App.css';
 // import MyClock from './02/MyClock';
-import MyDiv from './03/MyDiv';
 import { FaHome } from "react-icons/fa";
+// import MyDiv from './03/MyDiv';
+import MyList from './04/MyList';
 
 function App() {
   return (
     <div className="flex flex-col w-full max-w-screen-xl mx-auto h-screen overscroll-y-auto">
       <header className="flex justify-between items-center text-xl font-bold h-20 p-10 bg-red-500">
-        <p>header</p>
+        <p>리액트 실습</p>
         <p>K-digital</p>
         <p><FaHome className="text-3xl text-zinc-200"/></p>
       </header>
-      <main className='grow'>
-        <div className='flex justify-center items-center'></div>
+      <main className='grow flex justify-center items-center'>
+         {/* <MyDiv/> */}
+        <MyList/>
       </main>
       <footer className='flex justify-center items-center text-white bg-slate-800 h-20'>
         ⓒ 2024 loklok2. All rights reserved.
