@@ -1,4 +1,3 @@
-
 import MyListData from "./MyListData.json";
 import MyListItem from "./MyListItem";
 
