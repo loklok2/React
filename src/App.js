@@ -3,7 +3,9 @@ import './App.css';
 // import MyClock from './02/MyClock';
 import { FaHome } from "react-icons/fa";
 // import MyDiv from './03/MyDiv';
-import MyList from './04/MyList';
+// import MyList from './04/MyList';
+// import Lotto from './05/Lotto';
+import BoxOffice from './06/BoxOffice';
 
 function App() {
   return (
@@ -15,7 +17,9 @@ function App() {
       </header>
       <main className='grow flex justify-center items-center'>
          {/* <MyDiv/> */}
-        <MyList/>
+        {/* <MyList/> */}
+        {/* <Lotto /> */}
+        <BoxOffice/>
       </main>
       <footer className='flex justify-center items-center text-white bg-slate-800 h-20'>
         ⓒ 2024 loklok2. All rights reserved.
