@@ -7,6 +7,7 @@ import { FaHome } from "react-icons/fa";
 // import Lotto from './05/Lotto';
 import BoxOffice from './06/BoxOffice';
 
+
 function App() {
   return (
     <div className="flex flex-col w-full max-w-screen-xl mx-auto h-screen overscroll-y-auto">
@@ -16,6 +17,7 @@ function App() {
         <p><FaHome className="text-3xl text-zinc-200"/></p>
       </header>
       <main className='grow flex justify-center items-center'>
+        {/* <MyClockTime/> */}
          {/* <MyDiv/> */}
         {/* <MyList/> */}
         {/* <Lotto /> */}
