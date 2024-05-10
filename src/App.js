@@ -5,7 +5,8 @@ import { FaHome } from "react-icons/fa";
 // import MyDiv from './03/MyDiv';
 // import MyList from './04/MyList';
 // import Lotto from './05/Lotto';
-import BoxOffice from './06/BoxOffice';
+// import BoxOffice from './06/BoxOffice';
+import Foodmain from './07/FoodMain';
 
 
 function App() {
@@ -21,7 +22,8 @@ function App() {
          {/* <MyDiv/> */}
         {/* <MyList/> */}
         {/* <Lotto /> */}
-        <BoxOffice/>
+        {/* <BoxOffice/> */}
+        <Foodmain />
       </main>
       <footer className='flex justify-center items-center text-white bg-slate-800 h-20'>
         ⓒ 2024 loklok2. All rights reserved.
