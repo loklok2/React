@@ -11,9 +11,10 @@ export default function FootData() {
   c1 = new Set(c1); //set 데이터 타입은 중복제거
   c1 = [...c1]      // set을 그대로 두고 map을 쓸수는 없으니 배열형태로 표현함
   console.log(c1)
+  //c는 운영주체 분류값 이며 버튼이 클릭되면 실행됨
   const handleClick = (c) => {
     console.log('c')
-    let tm = fooddata.filter(item => item['운영주체 분류'] === c)
+    let tm = fooddata.filter(item => item['운영주체 분류'] === c)     //필터를 걸어서 c 와 동일한 값인지 확인 
       .map(item => <FoodCard data={item} key={item['사업장명']} />)//버튼이 누를때마다 c1List가 바뀌고 새로 그려진다
     setC1List(tm)
   }
