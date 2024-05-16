@@ -10,15 +10,15 @@ import ButtonC from "../Ui/ButtonC"
 
 export default function TrafficMain() {
   const [tdata, setTdata] = useState([])    //전체 fetch데이터
-  const [c1, setC1] = useState([])          //대분류         
-  const [c1Tag, setC1Tag] = useState([])    //대분류 선택
-  const [c1Sel, setC1Sel] = useState([])    // 선택된 대분류 
+  const [c1, setC1] = useState()          //대분류         
+  const [c1Tag, setC1Tag] = useState()    //대분류 선택
+  const [c1Sel, setC1Sel] = useState()    // 선택된 대분류 
 
-  const [c2, setC2] = useState([])          // 중분류
-  const [c2Tag, setC2Tag] = useState([])    // 중분류 선택
-  const [c2Sel, setC2Sel] = useState([])    // 선택된 중분류 
+  const [c2, setC2] = useState()          // 중분류
+  const [c2Tag, setC2Tag] = useState()    // 중분류 선택
+  const [c2Sel, setC2Sel] = useState()    // 선택된 중분류 
 
-  const [info, setInfo] = useState([])      //상세
+  const [info, setInfo] = useState()      //상세
 
   // fetch에서 데이터 가져오기
   const getFetchData = (url) => {
@@ -56,7 +56,7 @@ export default function TrafficMain() {
   //c1이 대분류 생성후
   useEffect(() => {
     if (!c1) return
-    console.log(c1)
+    console.log('c1=', c1)
     let tm = c1.map((item) => <ButtonC caption={item}
       key={item}
       bcolor='red'
@@ -66,22 +66,22 @@ export default function TrafficMain() {
 
   //대분류선택 후 중분류 생성
   useEffect(() => {
-    console.log(c1Sel)
+    console.log("대분류선택 :", c1Sel)
     let tm = tdata.filter(item => item['사고유형_대분류'] === c1Sel)
-      .map(item => item['사고유형_중분류'])
-    setC2(tm)
-  }, [c1Sel])
+      .map(item => item['사고유형_중분류']);
+    setC2(tm);
+  }, [c1Sel]);
 
   //중분류 생성 후
   useEffect(() => {
-    if (!c2) return
-    console.log(c2)
+    if (!c2) return;
+    console.log("c2", c2)
     let tm = c2.map((item) => <ButtonC caption={item}
       key={item}
-      bcolor='red'
+      bcolor={'blue'}
       handleClick={() => handleC2Select(item)} />)
-    setC2Tag(tm)
-  }, [c2])
+    setC2Tag(tm);
+  }, [c2]);
 
   //중분류 선택 후 상세
   useEffect(() => {
@@ -89,11 +89,12 @@ export default function TrafficMain() {
     console.log("중분류선택 :", c2Sel)
 
     let tm = tdata.filter(item => item['사고유형_대분류'] === c1Sel &&
-                                  item['사고유형_중분류'] === c2Sel)
-    tm = tm[0]
-    console.log('상세:',tm)
-    setInfo(tm['사고건수'])
-  }, [c2Sel])
+      item['사고유형_중분류'] === c2Sel)
+    tm = tm[0];
+    console.log('상세', tm)
+    // setInfo(tm['사고건수'])
+
+  }, [c2Sel]);
 
   return (
     <div className="w-10/12 h-full flex flex-col  justify-start items-start">
