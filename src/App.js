@@ -9,7 +9,8 @@ import { FaHome } from "react-icons/fa";
 // import Foodmain from './07/FoodMain';
 // import TrafficMain from './08/TrafficMain';
 // import TrafficNav from './08_1/TrafficNav';
-import Traffic from './08_1/Traffic';
+// import Traffic from './08_1/Traffic';
+import MyRef from './09/MyRef';
 
 
 function App() {
@@ -29,7 +30,8 @@ function App() {
         {/* <Foodmain /> */}
         {/* <TrafficMain /> */}
         {/* <TrafficNav/> */}
-        <Traffic/>
+        {/* <Traffic/> */}
+        <MyRef />
       </main>
       <footer className='flex justify-center items-center text-white bg-slate-800 h-20'>
         ⓒ 2024 loklok2. All rights reserved.
