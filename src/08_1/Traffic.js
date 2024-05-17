@@ -16,12 +16,12 @@ export default function Traffic() {
             .then(data => setTdata(data.data))
             .catch(err => console.log(err))
     }
-    //컴포넌트 생성시 최소 1회 실행
     useEffect(() => {
-        let url = 'https://api.odcloud.kr/api/15070282/v1/uddi:00e5cb5a-ecdf-4190-a499-ba3a6b2a8db9?'
-        url = `${url}page=1&perPage=17&returnType=json`
-        url = `${url}&serviceKey=${process.env.REACT_APP_API_KEY}`
-        console.log(url)
+    //컴포넌트 생성시 최소 1회 실행
+    let url = 'https://api.odcloud.kr/api/15070282/v1/uddi:00e5cb5a-ecdf-4190-a499-ba3a6b2a8db9?'
+    url = `${url}page=1&perPage=17&returnType=json`
+    url = `${url}&serviceKey=${process.env.REACT_APP_API_KEY}`
+    console.log(url)
         getFetchData(url)
     }, [])
     //tdata 변경될때 

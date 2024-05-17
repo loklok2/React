@@ -23,12 +23,12 @@ export default function MyRef() {
     console.log("rVal=", rVal)
   }
   const handleClick= ()=>{
-    if(x1.current.value){
+    if(!x1.current.value){
       alert("값을 입력하세요")
       x1.current.focus()
       return
     }
-    if(x2.current.value){
+    if(!x2.current.value){
       alert("값을 입력하세요")
       x2.current.focus()
       return
