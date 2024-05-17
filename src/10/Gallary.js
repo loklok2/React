@@ -34,13 +34,16 @@ export default function Gallary() {
     },[gdata])
 
   return (
-    <div className="w-full flex flex-col justify-center items-center ">
+    <div className="w-full flex flex-col justify-start items-start ">
         <div className="w-full flex justify-center items-center my-5 h-40">
             입력
         </div>
-        <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center">  
         {gdata && cards}
         </div>
     </div>
   )
 }
+
+
+///grid 중앙정렬 안될시 place-items-center
