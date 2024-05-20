@@ -38,6 +38,9 @@ export default function Festival() {
             ));
             setCards(tm); 
         }
+        // 새로운 함수지정 보다 짧고 간결한 코드
+        //let tm = tdata.filter(item=> item.GUGUN_NM === selRef.current.value)
+        //                     .map(item =>)
     }
 
 
@@ -91,6 +94,7 @@ export default function Festival() {
                       md:grid-cols-2 lg:grid-cols-3 
                       gap-2">
                     {cards}
+                    {/* tdata && cards */}
             </div>
         </div>
     )
