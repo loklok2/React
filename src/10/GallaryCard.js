@@ -10,7 +10,6 @@ export default function GallaryCard({imgUrl, title, location, Ttag}) {
                         </span>
                     )
         
-
   return (
     <div className="w-full max-w-sm rounded overflow-hidden shadow-lg">
             <img className="w-full" src={imgUrl.includes('http:')

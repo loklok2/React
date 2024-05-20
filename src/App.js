@@ -1,5 +1,4 @@
 // import logo from './logo.svg'
-import GallaryCard from './10/GallaryCard';
 import './App.css';
 // import MyClock from './02/MyClock';
 import { FaHome } from "react-icons/fa";
@@ -12,7 +11,8 @@ import { FaHome } from "react-icons/fa";
 // import TrafficNav from './08_1/TrafficNav';
 // import Traffic from './08_1/Traffic';
 // import MyRef from './09/MyRef';
-import Gallary from './10/Gallary';
+// import Gallary from './10/Gallary';
+import Festival from './11/Festival';
 
 
 function App() {
@@ -34,7 +34,8 @@ function App() {
         {/* <TrafficNav/> */}
         {/* <Traffic/> */}
         {/* <MyRef /> */}
-        <Gallary/>
+        {/* <Gallary/> */}
+        <Festival/>
       </main>
       <footer className='flex justify-center items-center text-white bg-slate-800 h-20'>
         ⓒ 2024 loklok2. All rights reserved.
