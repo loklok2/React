@@ -10,7 +10,7 @@ export default function Gallary() {
     const handleOk = (e) => {
         e.preventDefault();
         console.log(inRef.current.value);
-        if (inRef.current.value == '') {
+        if (inRef.current.value === '') {
             alert('키워드를 입력하세요.');
             inRef.current.focus();
             return;
