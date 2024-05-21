@@ -23,18 +23,18 @@ function App() {
     <div className="flex flex-col w-full max-w-screen-xl mx-auto h-screen overscroll-y-auto">
       <BrowserRouter>
       <header className="flex justify-between items-center text-xl font-bold h-20 p-10 bg-red-500">
-        <p>리액트 실습</p>
-        <ul className="w-80% grid grid-cols-10 text-xs">
-          <li><Link to='/'>MyClock</Link></li>
-          <li><Link to='/p1'>MyDiv</Link></li>
-          <li><Link to='/p2'>MyList</Link></li>
-          <li><Link to='/p3'>Lotto</Link></li>
-          <li><Link to='/p4'>BoxOffice</Link></li>
-          <li><Link to='/p5'>FoodMain</Link></li>
-          <li><Link to='/p6'>Traffic</Link></li>
-          <li><Link to='/p7'>MyRef</Link></li>
-          <li><Link to='/p8'>Gallary</Link></li>
-          <li><Link to='/p9'>Festival</Link></li>
+        <p className="text-base">리액트 실습</p>
+        <ul className="w-80% grid grid-cols-10 text-sm">
+          <li className="mx-4 p-2"><Link to='/'>MyClock</Link></li>
+          <li className="mx-4 p-2"><Link to='/p1'>MyDiv</Link></li>
+          <li className="mx-4 p-2"><Link to='/p2'>MyList</Link></li>
+          <li className="mx-4 p-2"><Link to='/p3'>Lotto</Link></li>
+          <li className="mx-4 p-2"><Link to='/p4'>BoxOffice</Link></li>
+          <li className="mx-4 p-2"><Link to='/p5'>FoodMain</Link></li>
+          <li className="mx-4 p-2"><Link to='/p6'>Traffic</Link></li>
+          <li className="mx-4 p-2"><Link to='/p7'>MyRef</Link></li>
+          <li className="mx-4 p-2"><Link to='/p8'>Gallary</Link></li>
+          <li className="mx-4 p-2"><Link to='/p9'>Festival</Link></li>
         </ul>
         <p><FaHome className="text-3xl text-zinc-200"/></p>
       </header>
