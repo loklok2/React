@@ -1,14 +1,11 @@
-import cimg from './clock.png';
-import MyClockTime from './MyClockTime';
+import img from './clock.png';
 
 function MyClockImg() {
-
-    return(
-        <header className="App-header">
-            <img src={cimg} className='App-logo'alt='시계'/>
-            <MyClockTime/>
-        </header>
+    return (
+        <>
+        <img src={img} className='App-logo' alt="시계" />
+        </>
     );
 }
 
-export default MyClockImg
+export default MyClockImg;

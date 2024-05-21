@@ -1,6 +1,7 @@
 // import logo from './logo.svg'
 import { BrowserRouter, Routes, Route, Link} from "react-router-dom"
 import './App.css';
+import Hello from "./01/Hello";
 import MyClock from './02/MyClock';
 import { FaHome } from "react-icons/fa";
 import MyDiv from './03/MyDiv';
@@ -8,8 +9,6 @@ import MyList from './04/MyList';
 import Lotto from './05/Lotto';
 import BoxOffice from './06/BoxOffice';
 import Foodmain from './07/FoodMain';
-import TrafficMain from './08/TrafficMain';
-import TrafficNav from './08_1/TrafficNav';
 import Traffic from './08_1/Traffic';
 import MyRef from './09/MyRef';
 import Gallary from './10/Gallary';
@@ -23,44 +22,47 @@ function App() {
     <div className="flex flex-col w-full max-w-screen-xl mx-auto h-screen overscroll-y-auto">
       <BrowserRouter>
       <header className="flex justify-between items-center text-xl font-bold h-20 p-10 bg-red-500">
-        <p className="text-base">리액트 실습</p>
+        <div>리액트 실습</div>
         <ul className="w-80% grid grid-cols-10 text-sm">
-          <li className="mx-4 p-2"><Link to='/'>MyClock</Link></li>
-          <li className="mx-4 p-2"><Link to='/p1'>MyDiv</Link></li>
-          <li className="mx-4 p-2"><Link to='/p2'>MyList</Link></li>
-          <li className="mx-4 p-2"><Link to='/p3'>Lotto</Link></li>
-          <li className="mx-4 p-2"><Link to='/p4'>BoxOffice</Link></li>
-          <li className="mx-4 p-2"><Link to='/p5'>FoodMain</Link></li>
-          <li className="mx-4 p-2"><Link to='/p6'>Traffic</Link></li>
-          <li className="mx-4 p-2"><Link to='/p7'>MyRef</Link></li>
-          <li className="mx-4 p-2"><Link to='/p8'>Gallary</Link></li>
-          <li className="mx-4 p-2"><Link to='/p9'>Festival</Link></li>
+          <li className="mx-2 p-2"><Link to='/'>Hello</Link></li>
+          <li className="mx-2 p-2"><Link to='/p1'>MyClock</Link></li>
+          <li className="mx-2 p-2"><Link to='/p2'>MyDiv</Link></li>
+          <li className="mx-2 p-2"><Link to='/p3'>MyList</Link></li>
+          <li className="mx-2 p-2"><Link to='/p4'>Lotto</Link></li>
+          <li className="mx-2 p-2"><Link to='/p5'>BoxOffice</Link></li>
+          <li className="mx-2 p-2"><Link to='/p6'>FoodMain</Link></li>
+          <li className="mx-2 p-2"><Link to='/p7'>Traffic</Link></li>
+          <li className="mx-2 p-2"><Link to='/p8'>MyRef</Link></li>
+          <li className="mx-2 p-2"><Link to='/p9'>Gallary</Link></li>
+          <li className="mx-2 p-2"><Link to='/p10'>Festival</Link></li>
         </ul>
         <p><FaHome className="text-3xl text-zinc-200"/></p>
       </header>
       <main className='grow flex justify-center items-center'>
       
       <Routes>
+        {/* <Hello/> */}
+        <Route path="/" element={<Hello/>}/>
         {/* <MyClock/> */}
-        <Route path="/" element={<MyClock/>}/>
+        <Route path="/p1" element={<MyClock/>}/>
         {/* <MyDiv/> */}
-        <Route path="/p1" element={<MyDiv/>}/>
+        <Route path="/p2" element={<MyDiv/>}/>
         {/* <MyList/> */}
-        <Route path="/p2" element={<MyList/>}/>
+        <Route path="/p3" element={<MyList/>}/>
         {/* <Lotto /> */}
-        <Route path="/p3" element={<Lotto/>}/>
+        <Route path="/p4" element={<Lotto/>}/>
         {/* <BoxOffice/> */}
-        <Route path="/p4" element={<BoxOffice/>}/>
+        <Route path="/p5" element={<BoxOffice/>}/>
         {/* <Foodmain /> */}
-        <Route path="/p5" element={<Foodmain/>}/>
+        <Route path="/p6" element={<Foodmain/>}/>
         {/* <Traffic/> */}
-        <Route path="/p6" element={<Traffic/>}/>
+        <Route path="/p7" element={<Traffic/>}/>
         {/* <MyRef /> */}
-        <Route path="/p7" element={<MyRef/>}/>
+        <Route path="/p8" element={<MyRef/>}/>
         {/* <Gallary/> */}
-        <Route path="/p8" element={<Gallary/>}/>
+        <Route path="/p9" element={<Gallary/>}/>
         {/* <Festival/> */}
-        <Route path="/p9" element={<Festival/>}/>
+        <Route path="/p10" element={<Festival/>}/>
         {/* <RouteMain/> */}
       </Routes>
       </main>
