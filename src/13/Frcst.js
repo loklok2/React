@@ -31,7 +31,7 @@ export default function Frcst() {
       return;
     }
 
-    navigate(`/frcstlt?gubun=${gubun}&x=${x}&y=${y}&dt=${inRef.current.value.replaceAll('-','')}&area=${area}`)
+    navigate(`/p12/?gubun=${gubun}&x=${x}&y=${y}&dt=${inRef.current.value.replaceAll('-','')}&area=${area}`)
   }
 
 
@@ -64,10 +64,10 @@ export default function Frcst() {
                       initText="--- 지역선택 ---"
                       handleChange={handleArea} />
           <ButtonC caption="초단기예보"
-                    bcolor="blue"
+                    bcolor="red"
                     handleClick={() => handleUrl('초단기')} />
           <ButtonC caption="단기예보"
-                    bcolor="blue"
+                    bcolor="red"
                     handleClick={() => handleUrl('단기')} />
         </div>
       </div>
