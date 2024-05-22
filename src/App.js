@@ -13,7 +13,8 @@ import Traffic from './08_1/Traffic';
 import MyRef from './09/MyRef';
 import Gallary from './10/Gallary';
 import Festival from './11/Festival';
-
+import Frcst from "./13/Frcst";
+import FrcstList from "./13/FrcstList";
 // import RouteMain from './12/RouteMain';
 
 
@@ -24,7 +25,7 @@ function App() {
       <header className="flex justify-between items-center text-xl font-bold h-20 p-10 bg-red-500">
         <div>리액트 실습</div>
         <ul className="w-80% grid grid-cols-10 text-sm">
-          <li className="mx-2 p-2"><Link to='/'>Hello</Link></li>
+          <li className="mx-2 p-2 hover:bg-red-100"><Link to='/'>Hello</Link></li>
           <li className="mx-2 p-2"><Link to='/p1'>MyClock</Link></li>
           <li className="mx-2 p-2"><Link to='/p2'>MyDiv</Link></li>
           <li className="mx-2 p-2"><Link to='/p3'>MyList</Link></li>
@@ -35,6 +36,7 @@ function App() {
           <li className="mx-2 p-2"><Link to='/p8'>MyRef</Link></li>
           <li className="mx-2 p-2"><Link to='/p9'>Gallary</Link></li>
           <li className="mx-2 p-2"><Link to='/p10'>Festival</Link></li>
+          <li className="mx-2 p-2"><Link to='/p11'>Frcst</Link></li>
         </ul>
         <p><FaHome className="text-3xl text-zinc-200"/></p>
       </header>
@@ -64,6 +66,10 @@ function App() {
         {/* <Festival/> */}
         <Route path="/p10" element={<Festival/>}/>
         {/* <RouteMain/> */}
+        <Route path="/p11" element={<Frcst/>}/>
+        {/* <Frcst/> */}
+        <Route path="/p12" element={<FrcstList/>}/>
+        {/* <Frcst/> */}
       </Routes>
       </main>
       <footer className='flex justify-center items-center text-white bg-slate-800 h-20'>

@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function TailSelectS({ops, selRef, initText, handleChange, id}) {
+export default function TailSelect({ops, selRef, initText, handleChange, id}) {
   const opTag = ops.map(item=>
                         <option key={item}
                         value={item}>{item}</option>
