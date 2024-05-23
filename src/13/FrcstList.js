@@ -115,8 +115,8 @@ export default function FrcstList() {
         </div>
       </div>
       <table className="w-11/12 text-left text-sm font-light text-surface">
-        <thead className="border-b border-neutral-200 font-medium">
-          <tr className="bg-black text-white font-bold text-center">
+        <thead className="border-b border-neutral-900 font-medium">
+          <tr className="bg-red-300 text-white font-bold text-center">
             <th scope="col" className="px-6 py-3">항목명</th>
             <th scope="col" className="px-6 py-3">예측일자</th>
             <th scope="col" className="px-6 py-3">예측시간</th>
