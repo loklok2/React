@@ -2,6 +2,7 @@ import ButtonC from "../Ui/ButtonC"
 import TailSelect from "../Ui/TailSelect";
 import TailInput from "../Ui/TailInput";
 
+
 import getxy from "./getxy.json";
 import { useNavigate } from "react-router-dom";
 import { useState, useEffect, useRef } from "react";
@@ -20,9 +21,9 @@ export default function Frcst() {
     let tm = getxy.filter(item => item["1단계"] === selRef.current.value)  ;
     tm = tm[0] ;
     console.log(tm)  
-    setX(tm["격자 X"]) ;
+    setX(tm["격자 X"]) 
     setY(tm["격자 Y"])
-    setArea(selRef.current.value) ;
+    setArea(selRef.current.value) 
   }
 
   const handleUrl = (gubun) => {
@@ -33,8 +34,6 @@ export default function Frcst() {
 
     navigate(`/p12/?gubun=${gubun}&x=${x}&y=${y}&dt=${inRef.current.value.replaceAll('-','')}&area=${area}`)
   }
-
-
   //컴포넌트 생성시
   useEffect(() => {
     let tm = getxy.map(item => item["1단계"]) ;
