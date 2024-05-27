@@ -15,6 +15,8 @@ import Gallary from './10/Gallary';
 import Festival from './11/Festival';
 import Frcst from "./13/Frcst";
 import FrcstList from "./13/FrcstList";
+import RecoilMain from "./14_1/RecoilMain";
+import Rest from "./15/Rest";
 
 // import RouteMain from './12/RouteMain';
 
@@ -27,17 +29,19 @@ function App() {
         <div>리액트 실습</div>
         <ul className="w-80% grid grid-cols-10 text-sm">
           <li className="mx-2 p-2 hover:bg-red-100"><Link to='/'>Hello</Link></li>
-          <li className="mx-2 p-2"><Link to='/p1'>MyClock</Link></li>
+          <li className="mx-2 p-2"><Link to='/p1'>시계</Link></li>
           <li className="mx-2 p-2"><Link to='/p2'>MyDiv</Link></li>
           <li className="mx-2 p-2"><Link to='/p3'>MyList</Link></li>
-          <li className="mx-2 p-2"><Link to='/p4'>Lotto</Link></li>
+          <li className="mx-2 p-2"><Link to='/p4'>로또</Link></li>
           <li className="mx-2 p-2"><Link to='/p5'>BoxOffice</Link></li>
-          <li className="mx-2 p-2"><Link to='/p6'>FoodMain</Link></li>
+          <li className="mx-2 p-2"><Link to='/p6'>FoodBank</Link></li>
           <li className="mx-2 p-2"><Link to='/p7'>Traffic</Link></li>
           <li className="mx-2 p-2"><Link to='/p8'>MyRef</Link></li>
           <li className="mx-2 p-2"><Link to='/p9'>Gallary</Link></li>
-          <li className="mx-2 p-2"><Link to='/p10'>Festival</Link></li>
+          <li className="mx-2 p-2"><Link to='/p10'>축제</Link></li>
           <li className="mx-2 p-2"><Link to='/p11'>Frcst</Link></li>
+          <li className="mx-2 p-2"><Link to='/p13'>Recoil</Link></li>
+          <li className="mx-2 p-2"><Link to='/p14'>Restfull</Link></li>
         </ul>
         <p><FaHome className="text-3xl text-zinc-200"/></p>
       </header>
@@ -71,6 +75,10 @@ function App() {
         {/* <Frcst/> */}
         <Route path="/p12" element={<FrcstList/>}/>
         {/* <Frcst/> */}
+        <Route path="/p13" element={<RecoilMain/>}/>
+        {/* <RecoilMain/> */}
+        <Route path="/p14" element={<Rest/>}/>
+        {/* <RecoilMain/> */}
       </Routes>
       </main>
       <footer className='flex justify-center items-center text-white bg-slate-800 h-20'>
